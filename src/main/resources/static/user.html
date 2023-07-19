@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>Página de Ingreso de Información</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./js/userfunctions.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Página de Ingreso de Información</h1>
+    
+    <form id="formulario">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" class="form-control" id="password" required>
+      </div>
+      
+      <button type="submit" class="btn btn-primary" id="adicionar">Adicionar</button>
+      <button type="submit" class="btn btn-primary" id="modificar">Modificar</button>
+      <button type="submit" class="btn btn-danger" id="eliminar">Eliminar</button>
+      <button type="button" class="btn btn-success" id="listar">Listar</button>
+    </form>
+    
+    <br>
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-body"></tbody>
+    </table>
+  </div>
+
+  </body>
+</html>
